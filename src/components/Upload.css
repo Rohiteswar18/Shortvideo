@@ -1,0 +1,72 @@
+.upload-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.upload-card {
+  background: #15161c;
+  border: 1px solid #21232b;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.upload-card h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.file-input {
+  position: relative;
+}
+
+.file-input label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  background: #0a0b0d;
+  border: 2px dashed #21232b;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #acacac;
+}
+
+.file-input label:hover {
+  border-color: #18e588;
+  color: #fff;
+}
+
+.file-input label ion-icon {
+  font-size: 2rem;
+}
+
+.file-input input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.upload-card button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #18e588;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.upload-card button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.1s;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Montserrat", Poppins, sans-serif;
+  background: #0c0d10;
+  color: #acacac;
+}
+
+#root {
+  max-width: 1180px;
+  margin: 0 auto;
+}

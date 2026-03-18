@@ -1,0 +1,140 @@
+.comments-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 100000;
+}
+
+.comments-container {
+  background: #15161c;
+  width: 100%;
+  max-width: 500px;
+  height: 80vh;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #21232b;
+}
+
+.comments-header {
+  padding: 1rem;
+  border-bottom: 1px solid #21232b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comments-header h3 {
+  color: #fff;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #acacac;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+.comments-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.no-comments {
+  text-align: center;
+  color: #acacac;
+  margin-top: 2rem;
+}
+
+.comment-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #0a0b0d;
+}
+
+.comment-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.username {
+  color: #18e588;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.timestamp {
+  color: #acacac;
+  font-size: 0.8rem;
+}
+
+.comment-text {
+  color: #fff;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.comment-form {
+  padding: 1rem;
+  border-top: 1px solid #21232b;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 0.8rem;
+  background: #0a0b0d;
+  border: 1px solid #21232b;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.comment-form input:focus {
+  outline: none;
+  border-color: #18e588;
+}
+
+.comment-form button {
+  padding: 0.8rem 1.5rem;
+  background: #18e588;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

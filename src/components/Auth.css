@@ -1,0 +1,92 @@
+.auth-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.auth-card {
+  background: #15161c;
+  border: 1px solid #21232b;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-card h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: #0a0b0d;
+  border: 1px solid #21232b;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #18e588;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #18e588;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.auth-card button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: #f813482b;
+  color: #f81348;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid #f81348;
+}
+
+.toggle-auth {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.toggle-auth span {
+  color: #18e588;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.toggle-auth span:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  background: #18e588;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
